@@ -2,13 +2,29 @@
 <html>
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
     </head>
     <body>
         <div class="center">
             <img src="/ui/madi.png" class="img-medium"/>
         </div>
         <br>
-        <div class="center text-big bold">
         <table>
         <tr>
             <th>Name</th>   
@@ -47,7 +63,6 @@
             <th>There is always space at the top</th>
         </tr>
         </table>
-        </div>
         <script type="text/javascript" src="/ui/main.js">
         </script>
     </body>
