@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var ArticleOne={
+var article={
+ 'article-one':{    
     title: 'Article One | Lonika Ghosh',
     heading : 'Article One',
     content: `            
@@ -16,21 +17,51 @@ var ArticleOne={
         <p>This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.
         </p>
         <p>This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.
+        </p>`},
+        
+ 'article-two':{    
+    title: 'Article Two | Lonika Ghosh',
+    heading : 'Article Two',
+    content: `            
+        <p>This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.
+        </p>
+        <p>This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.
+        </p>
+        <p>This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.
+        </p>
+        <p>This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.
         </p>`
-};
+     
+ },
+        
+ 'article-three':{   
+    title: 'Article Three | Lonika Ghosh',
+    heading : 'Article Three',
+    content: `            
+        <p>This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.
+        </p>
+        <p>This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.
+        </p>
+        <p>This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.
+        </p>
+        <p>This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.This is the content for my first article. Its really nice to write a code like this. I love making such websites and would love to develop one soon enough.
+        </p>`},`
+}
 
 function createTemplate(data) {
     var title=data.title;
     var heading=data.heading;
     var content=data.content;
     
-    var htmlTemplate=`
+    var htmlTemplate = `
         <html>
-          <head>
-            <title${title}</title>
-            <meta name="viewport" contents="width=device-width, initial-scale=1"/>
+            <head>
+                <title>
+                    ${title}
+                </title>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link href="/ui/style.css" rel="stylesheet" />
-          </head>
+            </head> 
           <body>
             <div class="container">
                 <div>
@@ -56,8 +87,9 @@ app.get('/ui/profile.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
 });
 
-app.get('/article-one', function (req, res) {
-  res.send(createTemplate(ArticleOne));
+app.get('/:articleName', function (req, res) {
+  var articleName = req.params.articleName;
+  res.send(createTemplate(Article[articleName]));
 });
 
 app.get('/article-two',function(req,res){
