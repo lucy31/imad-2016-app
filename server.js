@@ -106,6 +106,25 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
+app.get('/ui/italian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'italian.jpg'));
+});
+
+app.get('/ui/chinese.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'chinese.jpg'));
+});
+
+app.get('/ui/continental.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'continental.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/samosa.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'samosa.jpg'));
+});
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
