@@ -102,6 +102,11 @@ app.get('/ui/me.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'me.png'));
 });
 
+app.get('/ui/lonika.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'lonika.png'));
+});
+
+
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
