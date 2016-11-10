@@ -103,7 +103,7 @@ app.get('/ui/me.png', function (req, res) {
 });
 
 app.get('/ui/lonika.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'lonika.png'));
+  res.sendFile(path.join(__dirname, 'ui', 'lonika.jpg'));
 });
 
 
