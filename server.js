@@ -171,20 +171,20 @@ app.get('/ui/Jharkhand.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Jharkhand.jpg'));
 });
 
-app.get('/ui/indian.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+app.get('/ui/Karnataka.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Karnataka.jpg'));
 });
 
-app.get('/ui/indian.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+app.get('/ui/Kerala.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Kerala.jpg'));
 });
 
-app.get('/ui/indian.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+app.get('/ui/Madhya Pradesh.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Madhya Pradesh.jpg'));
 });
 
-app.get('/ui/indian.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+app.get('/ui/Maharashtra.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Maharashtra.jpg'));
 });
 
 app.get('/ui/indian.jpg', function (req, res) {
