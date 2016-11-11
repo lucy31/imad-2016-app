@@ -56,6 +56,9 @@
                 width: 24.99999%;
             }
             
+            .mySlides 
+            {display:none;}
+            
             @media only screen and (max-width: 700px){
                 .responsive {
                     width: 49.99999%;
@@ -675,7 +678,33 @@
             <h1>Desserts</h1>
             <p>Many Indian desserts, or mithai, are fried foods made with sugar, milk or condensed milk. Ingredients and preferred types of dessert vary by region. In the eastern part of India, for example, most are based on milk products. Many are flavoured with almonds and pistachios, spiced with cardamon, nutmeg, cloves and black pepper, and decorated with nuts, or with gold or silver leaf. Popular Indian desserts include gulab jamun and jalebi.
             </p>
-
+            
+            <div style="max-width:250px; max-height:200px; float: centre">
+              <img class="mySlides" src="ui/ladoo.jpg.jpg" style="width:100%">
+              <img class="mySlides" src="ui/payasam.jpg" style="width:100%">
+              <img class="mySlides" src="ui/kulfi.jpg" style="width:100%">
+              <img class="mySlides" src="ui/kajubarfi.jpg" style="width:100%">
+              <img class="mySlides" src="ui/phirni.jpg" style="width:100%">
+              <img class="mySlides" src="ui/gulabjamun.jpg" style="width:100%">
+              <img class="mySlides" src="ui/rasgulla.jpg" style="width:100%">
+            </div>
+            
+            <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+            </script>
         </div>
     	
     </body>
