@@ -83,29 +83,45 @@
             
             <div class="responsive">
                 <div class="img">
-                       <hello><img src="ui/AndhraPradesh.jpg" alt="Andhra Pradesh" width="600" height="400"></hello>
+                       <a1><img src="ui/AndhraPradesh.jpg" alt="Andhra Pradesh" width="600" height="400"></a1>
                 </div>
             </div>
             <script>
-$(document).ready(function(){
-    $("hello").click(function(){
-        if(a1==0){
-            $("#div1").load("http://lucy31.imad.hasura-app.io/ui/AndhraPradesh.html");
-            a1=1;
-        }
-        else{
-            $("#div1").load("http://lucy31.imad.hasura-app.io/ui/blank.txt");
-            a1=0;
-        }
-    });
-});
-</script>
-<div id="div1"></div>
+                $(document).ready(function(){
+                    $("a1").click(function(){
+                        if(a1==0){
+                            $("#div1").load("http://lucy31.imad.hasura-app.io/ui/AndhraPradesh.html");
+                            a1=1;
+                        }
+                        else{
+                            $("#div1").load("http://lucy31.imad.hasura-app.io/ui/blank.txt");
+                            a1=0;
+                        }
+                    });
+                });
+            </script>
+            <div id="div1"></div>
+            
             <div class="responsive">
                  <div class="img">
-                        <img src="ui/ArunachalPradesh.jpg" alt="Arunachal Pradesh" width="600" height="400">
+                        <a2><img src="ui/ArunachalPradesh.jpg" alt="Arunachal Pradesh" width="600" height="400"></a2>
                 </div>
             </div>
+            <script>
+                $(document).ready(function(){
+                    $("a2").click(function(){
+                        if(a2==0){
+                            $("#div1").load("http://lucy31.imad.hasura-app.io/ui/ArunachalPradesh.html");
+                            a2=1;
+                        }
+                        else{
+                            $("#div2").load("http://lucy31.imad.hasura-app.io/ui/blank.txt");
+                            a2=0;
+                        }
+                    });
+                });
+            </script>
+            <div id="div2"></div>
             
             <div class="responsive">
                 <div class="img">
