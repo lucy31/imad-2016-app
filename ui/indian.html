@@ -209,9 +209,25 @@
             
             <div class="responsive">
                 <div class="img">
-                        <img src="ui/Gujrat.jpg" alt="Gujarat" width="600" height="400">
+                        <a7><img src="ui/Gujrat.jpg" alt="Gujarat" width="600" height="400"></a7>
                 </div>
             </div>
+            <script>
+                $(document).ready(function(){
+                    $("a7").click(function(){
+                        if(a7==0){
+                            $("#div7").load("http://lucy31.imad.hasura-app.io/ui/Gujarat.html");
+                            a7=1;
+                        }
+                        else{
+                            $("#div7").load("http://lucy31.imad.hasura-app.io/ui/blank.txt");
+                            a7=0;
+                        }
+                    });
+                });
+            </script>
+            <div id="div7"></div>
+            
                 
             <div class="responsive">
                  <div class="img">
