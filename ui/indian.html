@@ -15,7 +15,7 @@
     			-o-background-size: cover;
     			background-size: cover;
     		}
-    		
+    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     		#page-wrap { width: 75%; margin: 100px auto; padding: 20px; background: transparent; -moz-box-shadow: 0 0 50px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
     		
     		p { 
@@ -75,10 +75,17 @@
             
             <div class="responsive">
                 <div class="img">
-                        <img src="ui/AndhraPradesh.jpg" alt="Andhra Pradesh" width="600" height="400">
+                       <hello><img src="ui/AndhraPradesh.jpg" alt="Andhra Pradesh" width="600" height="400"></hello>
                 </div>
             </div>
-            
+            <script>
+$(document).ready(function(){
+    $("hello").click(function(){
+        $("#div1").load("demo_test.txt");
+    });
+});
+</script>
+<div id="div1"></div>
             <div class="responsive">
                  <div class="img">
                         <img src="ui/ArunachalPradesh.jpg" alt="Arunachal Pradesh" width="600" height="400">
