@@ -188,9 +188,24 @@
             
             <div class="responsive">
                  <div class="img">
-                        <img src="ui/Goa.jpg" alt="Goa" width="600" height="400">
+                        <a6><img src="ui/Goa.jpg" alt="Goa" width="600" height="400"></a6>
                 </div>
             </div>
+            <script>
+                $(document).ready(function(){
+                    $("a6").click(function(){
+                        if(a6==0){
+                            $("#div6").load("http://lucy31.imad.hasura-app.io/ui/Goa.html");
+                            a6=1;
+                        }
+                        else{
+                            $("#div6").load("http://lucy31.imad.hasura-app.io/ui/blank.txt");
+                            a6=0;
+                        }
+                    });
+                });
+            </script>
+            <div id="div6"></div>
             
             <div class="responsive">
                 <div class="img">
