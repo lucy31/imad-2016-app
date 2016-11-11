@@ -163,12 +163,12 @@ app.get('/ui/Himachal Pradesh.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Himachal Pradesh.jpg'));
 });
 
-app.get('/ui/indian.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+app.get('/ui/JK.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'JK.jpg'));
 });
 
-app.get('/ui/indian.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+app.get('/ui/Jharkhand.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Jharkhand.jpg'));
 });
 
 app.get('/ui/indian.jpg', function (req, res) {
