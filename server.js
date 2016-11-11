@@ -195,6 +195,30 @@ app.get('/ui/Rajasthan.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Rajasthan.html'));
 });
 
+app.get('/ui/TamilNadu.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'TamilNadu.html'));
+});
+
+app.get('/ui/Telangana.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Telangana.html'));
+});
+
+app.get('/ui/Tripura.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Tripura.html'));
+});
+
+app.get('/ui/UttarPradesh.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'UttarPradesh.html'));
+});
+
+app.get('/ui/Uttarakhand.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Uttarakhand.html'));
+});
+
+app.get('/ui/WestBengal.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'WestBengal.html'));
+});
+
 app.get('/ui/me.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'me.png'));
 });
