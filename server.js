@@ -89,6 +89,10 @@ app.get('/ui/profile.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
 });
 
+app.get('/ui/blank.txt', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'blank.txt'));
+});
+
 app.get('/:articleName', function (req, res) {
   var articleName = req.params.articleName;
   res.send(createTemplate(article[articleName]));
