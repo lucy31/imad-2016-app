@@ -95,7 +95,7 @@ app.get('/:articleName', function (req, res) {
 });
 
 app.get('/indian', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Indian.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'indian.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
