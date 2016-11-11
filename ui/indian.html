@@ -131,9 +131,24 @@
                 
             <div class="responsive">
                  <div class="img">
-                        <img src="ui/Bihar.jpg" alt="Bihar" width="600" height="400">
+                        <a3><img src="ui/Bihar.jpg" alt="Bihar" width="600" height="400"></a3>
                 </div>
             </div>
+            <script>
+                $(document).ready(function(){
+                    $("a2").click(function(){
+                        if(a3==0){
+                            $("#div3").load("http://lucy31.imad.hasura-app.io/ui/Assam.html");
+                            a3=1;
+                        }
+                        else{
+                            $("#div3").load("http://lucy31.imad.hasura-app.io/ui/blank.txt");
+                            a3=0;
+                        }
+                    });
+                });
+            </script>
+            <div id="div3"></div>
             
             <div class="responsive">
                 <div class="img">
