@@ -128,7 +128,7 @@ app.get('/ui/continental.jpg', function (req, res) {
 });
 
 app.get('/ui/Andhra Pradesh.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Andhra Pradesh.jpg'));
+  res.sendFile(path.join(__dirname, 'ui', 'Andhra%20Pradesh.jpg'));
 });
 
 app.get('/ui/Arunachal Pradesh.jpg', function (req, res) {
