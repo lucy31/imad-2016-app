@@ -422,10 +422,25 @@
             
             <div class="responsive">
                 <div class="img">
-                        <img src="ui/Meghalaya.jpg" alt="Meghalaya" width="600" height="400">
+                        <a17><img src="ui/Meghalaya.jpg" alt="Meghalaya" width="600" height="400"></a17>
                 </div>
             </div>
-                
+            <script>
+                $(document).ready(function(){
+                    $("a17").click(function(){
+                        if(a17==0){
+                            $("#div17").load("http://lucy31.imad.hasura-app.io/ui/Meghalaya.html");
+                            a17=1;
+                        }
+                        else{
+                            $("#div17").load("http://lucy31.imad.hasura-app.io/ui/blank.txt");
+                            a17=0;
+                        }
+                    });
+                });
+            </script>
+            <div id="div17"></div>
+            
             <div class="responsive">
                  <div class="img">
                         <img src="ui/Mizoram.jpg" alt="Mizoram" width="600" height="400">
