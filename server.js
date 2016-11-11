@@ -143,6 +143,10 @@ app.get('/ui/AndhraPradesh.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'AndhraPradesh.jpg'));
 });
 
+app.get('/ui/Assam.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Assam.jpg'));
+});
+
 app.get('/ui/ArunachalPradesh.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ArunachalPradesh.jpg'));
 });
