@@ -102,6 +102,10 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+app.get('/ui/AndhraPradesh.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'AndhraPradesh.html'));
+});
+
 app.get('/ui/me.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'me.png'));
 });
