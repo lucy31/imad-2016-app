@@ -94,7 +94,7 @@ app.get('/:articleName', function (req, res) {
   res.send(createTemplate(article[articleName]));
 });
 
-app.get('/ui/Indian.html', function (req, res) {
+app.get('/Indian', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Indian.html'));
 });
 
