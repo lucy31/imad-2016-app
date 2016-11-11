@@ -114,6 +114,87 @@ app.get('/ui/ArunachalPradesh.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ArunachalPradesh.html'));
 });
 
+app.get('/ui/Assam.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Assam.html'));
+});
+
+
+app.get('/ui/Bihar.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Bihar.html'));
+});
+
+app.get('/ui/Chattisgarh.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Chattisgarh.html'));
+});
+
+app.get('/ui/Goa.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Goa.html'));
+});
+
+app.get('/ui/Gujarat.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Gujarat.html'));
+});
+
+app.get('/ui/Haryana.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Haryana.html'));
+});
+
+app.get('/ui/HimachalPradesh.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'HimachalPradesh.html'));
+});
+
+app.get('/ui/JK.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'JK.html'));
+});
+
+app.get('/ui/Jharkhand.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Jharkhand.html'));
+});
+
+app.get('/ui/Karnataka.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Karnataka.html'));
+});
+
+app.get('/ui/Kerala.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Kerala.html'));
+});
+
+app.get('/ui/MadhyaPradesh.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'MadhyaPradesh.html'));
+});
+
+app.get('/ui/Maharashtra.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Maharashtra.html'));
+});
+
+app.get('/ui/Manipur.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Manipur.html'));
+});
+
+app.get('/ui/Meghalaya.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Meghalaya.html'));
+});
+
+app.get('/ui/Mizoram.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Mizoram.html'));
+});
+
+app.get('/ui/Nagaland.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Nagaland.html'));
+});
+
+app.get('/ui/Odisha.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Odisha.html'));
+});
+
+app.get('/ui/Punjab.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Punjab.html'));
+});
+
+app.get('/ui/Rajasthan.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Rajasthan.html'));
+});
+
 app.get('/ui/me.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'me.png'));
 });
