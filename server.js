@@ -127,13 +127,126 @@ app.get('/ui/continental.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'continental.jpg'));
 });
 
+app.get('/ui/Andhra Pradesh.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Andhra Pradesh.jpg'));
+});
+
+app.get('/ui/Arunachal Pradesh.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Arunachal Pradesh.jpg'));
+});
+
+app.get('/ui/Assam.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Assam.jpg'));
+});
+
+app.get('/ui/Bihar.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Bihar.jpg'));
+});
+
 app.get('/ui/indian.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
 });
 
-app.get('/ui/samosa.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'samosa.jpg'));
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
 });
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
+app.get('/ui/indian.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'indian.jpg'));
+});
+
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
