@@ -123,8 +123,8 @@ app.get('/ui/Bihar.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Bihar.html'));
 });
 
-app.get('/ui/Chattisgarh.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Chattisgarh.html'));
+app.get('/ui/Chhattisgarh.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Chhattisgarh.html'));
 });
 
 app.get('/ui/Goa.html', function (req, res) {
