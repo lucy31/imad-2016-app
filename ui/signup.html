@@ -4,9 +4,6 @@
     <title>Article Two | Lonika Ghosh</title>
     <meta name="viewport" contents="width=device-width, initial-scale=1"/>
     <!--   <link href="/ui/style.css" rel="stylesheet" /> -->
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
   </head>
   
   <body>
@@ -14,13 +11,7 @@
 	    <table cellspacing="10">
 	        <tr><td>Name</td><td><input type="text" name="login" maxlength="50" id="Name" onKeyUp="updatelength('name', 'name_length')"><br /><div id="name_length"></div> </td></tr>
 
-	        <tr><td>Date of Birth</td><td><!--<input type="date" name="dob" maxlength="" id="dob">-->
-	          <script>
-  $(document).ready(function() {
-    $("#datepicker").datepicker();
-  });
-  </script>
-   <input id="datepicker" />
+	        <tr><td>Date of Birth</td><td><input type="date" name="dob" maxlength="" id="dob">
 	        </td></tr>
 	        
 	        <tr><td>Address</td><td><input type="text" name="address" maxlength="200" id="Address" onKeyUp="updatelength('address', 'address_length')"><div id="address_result"></div><br /><div id="address_length"></div></td></tr>
