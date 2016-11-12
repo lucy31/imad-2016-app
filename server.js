@@ -82,7 +82,7 @@ function createTemplate(data) {
 }
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'indian.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'signup.html'));
 });
 
 app.get('/ui/profile.html', function (req, res) {
