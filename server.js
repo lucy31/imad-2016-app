@@ -72,6 +72,7 @@ var pool = new Pool(config);
   
   function hash(input){
       var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
+      return hashed;
   }
   
   app.get('/hash/:input', function(req,res){
