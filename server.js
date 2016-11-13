@@ -70,7 +70,8 @@ var pool = new Pool(config);
   });
   
   app.get('/hash/:input', function(req,res){
-      var hashString = 
+      var hashedString = hash(req.params.input);
+      res.send(hashedString);
   });
   
 function createTemplate(data) {
