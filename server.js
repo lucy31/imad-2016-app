@@ -59,6 +59,10 @@ var article={
  },
 };
 
+var pool = new Pool(config);
+app.get('/user.db', function(req,res){
+    
+})
 function createTemplate(data) {
     var title=data.title;
     var heading=data.heading;
