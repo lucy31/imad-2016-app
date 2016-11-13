@@ -60,13 +60,17 @@ var article={
 
 var pool = new Pool(config);
  app.get('/users', function (req, res) {
-    pool.query('SELECT * FROM test', function (err, result) {
+    pool.query('SELECT * FROM users', function (err, result) {
         if (err) {
           res.status(500).send(err.toString());
         } else {
             res.send(JSON.stringify(result.rows));
         }
     });
+  });
+  
+  app.get('/hash/:input', function(req,res){
+      var hashString = 
   });
   
 function createTemplate(data) {
