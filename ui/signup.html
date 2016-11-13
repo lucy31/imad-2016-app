@@ -90,7 +90,7 @@
                 <form>
                     <input id="name" class="form-control" placeholder="First Name" autocomplete="on" type="text">
                     <br>
-                    <input id="email" class="form-control" placeholder="Email Address" autocomplete="on" type="text" onKeyUp="vali('email')">
+                    <input id="email" class="form-control" placeholder="Email Address" autocomplete="on" type="text" onKeyUp="something()">
                     <br>
                     <input id="userid" class="form-control" placeholder="Choose a Username" autocomplete="off" type="text">
                     <br>
@@ -101,10 +101,19 @@
             </div>
             </div>
             
-            <script>
-      function vali(emailAddress){
+    <script>
+      function val(emailAddress){        
       var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
      return pattern.test(emailAddress);
+   }
+   function something(){
+     emailAddress =  document.getElementById("email").value;
+      if(val(emailAddress)){
+        document.write("Yes");
+      }
+      else{
+        document.write("Wrong");
+      }
    }
     </script>
         
