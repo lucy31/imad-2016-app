@@ -3,6 +3,7 @@ var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
 var crypto = require('crypto');
+
 var config = {
     user: 'lucy31',
     database: 'lucy31',
@@ -70,7 +71,7 @@ var pool = new Pool(config);
   });
   
   function hash(input){
-      var hashed = crypto.pbkdf2Sync();
+      var hashed = crypto.pbkdf2Sync(input,salt,iterations);
   }
   
   app.get('/hash/:input', function(req,res){
