@@ -96,7 +96,7 @@ app.post('/login' ,function (req,res){
                     var hashedPassword = hash(password,salt);
                     if(hashedPassword === dbString)
                     {    
-                        req.session.outh = {userid : result.rows[0].id};
+                        req.session.auth = {userid : result.rows[0].id};
                         res.send('Credentials correct');
                     }else{
                     res.send(403).send('userid/password is invalid');                        
@@ -107,11 +107,16 @@ app.post('/login' ,function (req,res){
 });
 
 app.get('/check-login', function(req,res){
-    if(req.session && req.session.outh && req.session.outh.userid){
-        res.send('You are logged in: '+ res.session.outh.userid.toString());
+    if(req.session && req.session.outh && req.session.auth.userid){
+        res.send('You are logged in: '+ res.session.auth.userid.toString());
     }else{
         res.send('You are not logged in');
     }
+});
+
+app.get('/logout', function(req,res){
+    delete req.session.auth;
+    res.send('logged out');
 });
 
 var pool = new Pool(config);
