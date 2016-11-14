@@ -77,12 +77,11 @@ app.post('/signup' ,function (req,res){
     });
 });
 
-app.get('/login' ,function (req,res){
+app.post('/login' ,function (req,res){
     var userid = req.body.userid;
     var password = req.body.password;
     var name = req.body.name;
     var email = req.body.email;
-    var salt = crypto.RandomBytes(128).toString('hex');
     var dbString = hash(password , salt);
     pool.query('INSERT INTO "Users" (Name,Email,UserId,Password) VALUES($1,$2,$3,$4)' , [name, email, userid, dbString], function(err, result){
             if (err) {
