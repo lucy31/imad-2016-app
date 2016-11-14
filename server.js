@@ -59,6 +59,11 @@ var article={
  },
 };
 
+app.get('/signup' ,function (req,res){
+
+    
+})
+
 var pool = new Pool(config);
  app.get('/users', function (req, res) {
     pool.query('SELECT * FROM users', function (err, result) {
