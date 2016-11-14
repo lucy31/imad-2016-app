@@ -73,6 +73,10 @@ app.get('/signup' ,function (req,res){
     });
 });
 
+app.get('/login' ,function (req,res){
+    
+});
+
 var pool = new Pool(config);
  app.post('/users', function (req, res) {
      var userid = req.body.userid;
