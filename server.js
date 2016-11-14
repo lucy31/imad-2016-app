@@ -91,7 +91,11 @@ app.post('/login' ,function (req,res){
                     var dbString = result.rows[0].password;
                     var salt = dbString.split('$')[2];
                     var hashedPassword = hash(password,salt);
-            res.send('User successfully created: '+ userid);
+                    if(hashedPassword === dbString)
+                    {    res.send('Credentials correct');
+                    }else{
+                    res.send(403).send('userid/password is invalid');                        
+                    }
                 }
             }
     });    
