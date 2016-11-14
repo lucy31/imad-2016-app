@@ -18,5 +18,6 @@ submit.onclick = function(){
     
     var userid = document.getElementById('userid').value;
     var password = document.getElementById('password').value;
-    re
-}
+    request.open('POST', 'http://lucy31.imad.hasura-app.io/submit-name?name' + name,true);
+    request.send(null);
+};
