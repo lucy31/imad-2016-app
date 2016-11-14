@@ -85,11 +85,11 @@ app.post('/login' ,function (req,res){
                 res.status(500).send(err.toString());
             } else {
                 if( result.rows.length === 0){
-                    res.send(403).send('userid/password is invalid')
+                    res.send(403).send('userid/password is invalid');
                 }
                 else{
                     var dbString = result.rows[0].password;
-                    dbString.split('$')
+                    var salt = dbString.split('$')[2];
             res.send('User successfully created: '+ userid);
                 }
             }
