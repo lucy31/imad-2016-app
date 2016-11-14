@@ -72,7 +72,7 @@ app.get('/signup' ,function (req,res){
 });
 
 var pool = new Pool(config);
- app.get('/users', function (req, res) {
+ app.post('/users', function (req, res) {
     pool.query('SELECT * FROM users', function (err, result) {
         if (err) {
           res.status(500).send(err.toString());
