@@ -18,6 +18,8 @@ submit.onclick = function(){
     
     var userid = document.getElementById('userid').value;
     var password = document.getElementById('password').value;
-    request.open('POST', 'http://lucy31.imad.hasura-app.io/submit-name?name' + name,true);
+    console.log(username);
+    console.log(password);
+    request.open('POST', 'http://lucy31.imad.hasura-app.io/signup' + name,true);
     request.send(JSON.strinfigy({userid: userid, password: password}));
 };
