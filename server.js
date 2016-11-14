@@ -75,6 +75,8 @@ var pool = new Pool(config);
  app.post('/users', function (req, res) {
      var userid = req.body.userid;
      var password = req.body.password;
+     var name = req.body.name;
+     var email = req.body.email;
     pool.query('SELECT * FROM users', function (err, result) {
         if (err) {
           res.status(500).send(err.toString());
