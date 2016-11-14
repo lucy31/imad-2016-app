@@ -80,9 +80,6 @@ app.post('/signup' ,function (req,res){
 app.post('/login' ,function (req,res){
     var userid = req.body.userid;
     var password = req.body.password;
-    var name = req.body.name;
-    var email = req.body.email;
-    var dbString = hash(password , salt);
     pool.query('INSERT INTO "Users" (Name,Email,UserId,Password) VALUES($1,$2,$3,$4)' , [name, email, userid, dbString], function(err, result){
             if (err) {
                 res.status(500).send(err.toString());
