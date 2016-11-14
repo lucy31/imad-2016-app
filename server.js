@@ -80,7 +80,7 @@ app.post('/signup' ,function (req,res){
 app.post('/login' ,function (req,res){
     var userid = req.body.userid;
     var password = req.body.password;
-    pool.query('SELECT * FROM "Users" userid = $1' , [userid], function(err, result){
+    pool.query('SELECT * FROM "Users" WHERE userid = $1' , [userid], function(err, result){
             if (err) {
                 res.status(500).send(err.toString());
             } else {
