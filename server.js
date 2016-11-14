@@ -80,7 +80,7 @@ app.post('/signup' ,function (req,res){
 app.post('/login' ,function (req,res){
     var userid = req.body.userid;
     var password = req.body.password;
-    pool.query('INSERT INTO "Users" (Name,Email,UserId,Password) VALUES($1,$2,$3,$4)' , [name, email, userid, dbString], function(err, result){
+    pool.query('SELECT * FROM "Users" userid = $1' , [userid], function(err, result){
             if (err) {
                 res.status(500).send(err.toString());
             } else {
@@ -90,8 +90,8 @@ app.post('/login' ,function (req,res){
 });
 
 var pool = new Pool(config);
- app.get('/users', function (req, res) {
-    pool.query('SELECT * FROM users', function (err, result) {
+ app.get('/Users', function (req, res) {
+    pool.query('SELECT * FROM Users', function (err, result) {
         if (err) {
           res.status(500).send(err.toString());
         } else {
