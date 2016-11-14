@@ -62,7 +62,7 @@ var article={
 };
 
 app.get('/signup' ,function (req,res){
-    var salt = crypto.getRandomBytes(128).toString('hex');
+    var salt = crypto.RandomBytes(128).toString('hex');
     var dbString = hash(password , salt);
     pool.query('INSERT INTO "Users" (Name,Email,UserId,Password) VALUES($1,$2,$3,$4)' , [name, email, userid, dbString], function(err, result){
             if (err) {
