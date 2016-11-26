@@ -176,8 +176,47 @@ function validatesignup(){
     }
     else{
         return false;
-    }
+    }	
 }
+
+var signup = document.getElementById('up');
+signup.onclick = function(){
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var userid = document.getElementById('userid').value;
+    var password = document.getElementById('password').value;
+    if(validatesignup() === true){
+            var request = new XMLHttpRequest();	
+			request.onreadystatechange = function () {
+            if (request.readyState === XMLHttpRequest.DONE) {
+                if (request.status === 200) {
+                      signup.value = 'Sucess!';
+                } else if (request.status === 403) {
+                      signup.value = 'Submit';
+                      var c = confirm("User already Registered\n If you have forget password click on \"OK\" else \"Cancel\"");
+                      if(c === true){
+                          var con = prompt("Enter \"CONFIRM\" to override the password"); 
+                          if(con === "confirm" || con === "CONFIRM"){
+                                updateUser(fname,lname,email,password);
+                          }
+                      }
+                } else if (request.status === 500) {
+                    alert('Something went wrong on the server');
+                      signup.value = 'Login';
+                  } else {
+                    alert('Something went wrong on the server');
+                    submit.value = 'Login';
+                    }
+                }  
+            };
+        
+            request.open('POST', '/signup', true);
+            request.setRequestHeader('Content-Type', 'application/json');
+            request.send(JSON.stringify({name: name, email: email, userid: userid, password: password}));  
+            signup.value = 'Registering...';
+        }
+};
+			
     </script>
         
   </body>
