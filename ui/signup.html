@@ -90,7 +90,7 @@
                 <form>
                     <input id="name" class="form-control" placeholder="First Name" autocomplete="on" type="text">
                     <br>
-                    <input id="email" class="form-control" placeholder="Email Address" autocomplete="on" type="text" onKeyUp="something()">
+                    <input id="email" class="form-control" placeholder="Email Address" autocomplete="on" type="emailAddress" onKeyUp="something()">
                     <label id="lblName"></label>
                     <br>
                     <input id="userid" class="form-control" placeholder="Choose a Username" autocomplete="off" type="text">
@@ -119,6 +119,65 @@
       }
    }
 
+function validatesignup(){
+	var name = document.getElementById('name');
+	var email = document.getElementById('email');
+	var userid = document.getElementById('userid');
+	var password = document.getElementById('password');
+	var password2 = document.getElementById('password2');	
+	
+	name.classList.remove("invalid");
+    email.classList.remove("invalid");
+    userid.classList.remove("invalid");
+    password.classList.remove("invalid");
+    password.classList.remove("invalid");
+
+	var check = true;
+	if(name.value === ""){
+		name.classList.add("invalid");
+		check = false;
+	}
+	if(email.value === ""){
+		name.classList.add("invalid");
+		check = false;
+	}
+	if(userid.value === ""){
+		name.classList.add("invalid");
+		check = false;
+	}
+	if(password.value === ""){
+		name.classList.add("invalid");
+		check = false;
+	}
+	if(password2.value === ""){
+		name.classList.add("invalid");
+		check = false;
+	}	
+    if(password.value !== "" && password2.value !== "" && password2.value !== password.value){
+        password.classList.add("invalid");
+        password2.classList.add("invalid");
+        alert("Passwords don't match");
+        check = false;
+    }	
+	if(password.value !== ""){
+        if(password.value.length <= 4 || password.value.length >= 15){
+            password.classList.add("invalid");
+            alert("Password length should be between 4 to 15 characters");
+            check = false;
+        }
+    }
+	if(check){
+        name.classList.remove("invalid");
+        userid.classList.remove("invalid");
+        email.classList.remove("invalid");
+        password.classList.remove("invalid");
+        password2.classList.remove("invalid");
+        return true;
+    }
+    else{
+        return false;
+    }
+}
     </script>
         
   </body>
